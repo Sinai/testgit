@@ -1,0 +1,17 @@
+git config --global user.name"Sinai"
+git config --global user.email"sinai4l@gmail.com"
+
+git init
+/beginnen with git/
+
+create file
+touch README
+git add .
+/commentss/
+git commit -m 'the comments'
+
+
+/adding to repostery/
+git remote add origin https://githube/Sinai/reposeteri.git
+/updating - you create a branch with comment and the file added/updated/
+git push origin master
