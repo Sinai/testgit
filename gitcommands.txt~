@@ -4,14 +4,26 @@ git config --global user.email"sinai4l@gmail.com"
 git init
 /beginnen with git/
 
-create file
+/create file/
 touch README
+
+/add all the (new) files in the folder to git/
 git add .
-/commentss/
+/to commit and  add comments wth -m /
 git commit -m 'the comments'
 
+/to remove the comment/
+git reset --soft Head^
 
-/adding to repostery/
+
+/to remove th comments and undo changes/
+git reset --hard HEAD^
+
+/add a reposetery to map/
 git remote add origin https://githube/Sinai/reposeteri.git
-/updating - you create a branch with comment and the file added/updated/
+
+/updating computer map with reposetery/
+git pull origin master
+
+/adding to repostery/-updating - you create a branch with comment and the file added/updated/
 git push origin master
