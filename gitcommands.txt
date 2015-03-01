@@ -14,27 +14,54 @@ git config --list
 /updating computer map with reposetery/
 git pull origin <branchname>/ waarbij branchname kan zijn master/ of wat for branch dan ook! 
 
+++++
 /set a upstream/
 git branch --set-upstream-to=origin/master master
-
-/updating only the master or other branch/
-git pull origin master/or any other branch
-
-/updating your branch../
-
 git branch --set-upstream-to=origin/<branch> <branch> is the branch name
 
-/create file/touch README
+++++
 
 
-
+/create file/
+touch README
+/modify file and save/
 /ADD NEW FILES AND COMMIT/
 git add .
-
+/commit/
 git commit -m 'the comments'
 
 /to see all the commits from everybody/
 git log		
+
+
+IF YOU ARE WORKING ON NEW/EXISTING BRANCH
+
+/how to add branch on computer disk/
+git branch BranchName
+/switch to branch/
+git checkout 'BranchName'
+
+HOW TO ADD MODIFICATIONS/NEW FILES IN THE BRANCH
+/create file/
+touch README
+/modify file and save/
+/ADD NEW FILES AND COMMIT/
+git add .
+/commit/
+git commit -m 'the comments'
+
+/How to merge the branch back to master/
+git checkout master 
+git merge BranchName
+
+/	to update the online repositery   /
+
+git push origin <branchname>, <branchname> could be any branch or master
+
+
+
+
+
 
 
 /to remove the comment/
@@ -49,16 +76,7 @@ git remote add origin https://githube/Sinai/reposeteri.git
 /adding to repostery/-updating - you create a branch with comment and the file added/updated/
 git push origin master
 
-/how to add branch on computer disk/
-git branch BranchName
 
-/switch to branch/
-git checkout 'BranchName'
-
-/with touch/add and commit you can create files add to ranch on computer disk/
-/switch to master to merge your new branch (on computer disk)/
-git checkout master
-git merge BranchName
 
 /check in which branch your are working/
 git branch
