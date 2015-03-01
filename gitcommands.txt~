@@ -12,6 +12,9 @@ git add .
 /to commit and  add comments wth -m /
 git commit -m 'the comments'
 
+/to see all the commits rom everybody/
+git log		
+
 /to remove the comment/
 git reset --soft Head^
 
@@ -23,7 +26,50 @@ git reset --hard HEAD^
 git remote add origin https://githube/Sinai/reposeteri.git
 
 /updating computer map with reposetery/
-git pull origin master
+git pull origin 
+
+/set a upstream/
+git branch --set-upstream-to=origin/master master
+
+/updating only the master or other branch/
+git pull origin master/or any other branch
+
+/updating your branch../
+
+git branch --set-upstream-to=origin/<branch> <branch> is the branch name
 
 /adding to repostery/-updating - you create a branch with comment and the file added/updated/
 git push origin master
+
+/how to add branch on computer disk/
+git branch BranchName
+
+/switch to branch/
+git checkout 'BranchName'
+
+/with touch/add and commit you can create files add to ranch on computer disk/
+/switch to master to merge your new branch (on computer disk)/
+git checkout master
+git merge BranchName
+
+/check in which branch your are working/
+
+
+If you want to update your owbn reposetery
+1) go to the location home/team-wordpress android/ with cmd
+2) check in which branch you are!
+3) git branch --set-upstream-to=origin/<branch> <branch> is the branch name 
+4) git pull origin <branch>, <branch> is the branch name!
+
+
+
+If you want to update a existing branch
+go local (on computer) to the branch
+add the files to the map home/team-wordpress android/
+do a add .
+do a git commit -m 'the comments'
+do a git push origin <branch> ,,, <branch> is the branch that you want to update 
+
+
+
+ 
