@@ -1,8 +1,25 @@
 git config --global user.name"Sinai"
 git config --global user.email"sinai4l@gmail.com"
 
+/* Beginnen with git */
 git init
-/beginnen with git/
+
+/* Check for configuration file, Repository/Origin adrees, UsrName and Email */
+git config --list
+
+
+/updating computer map with reposetery/
+git pull origin <branchname>/ waarbij branchname kan zijn master/ of wat for branch dan ook! 
+
+/set a upstream/
+git branch --set-upstream-to=origin/master master
+
+/updating only the master or other branch/
+git pull origin master/or any other branch
+
+/updating your branch../
+
+git branch --set-upstream-to=origin/<branch> <branch> is the branch name
 
 /create file/
 touch README
@@ -25,18 +42,7 @@ git reset --hard HEAD^
 /add a reposetery to map/
 git remote add origin https://githube/Sinai/reposeteri.git
 
-/updating computer map with reposetery/
-git pull origin 
 
-/set a upstream/
-git branch --set-upstream-to=origin/master master
-
-/updating only the master or other branch/
-git pull origin master/or any other branch
-
-/updating your branch../
-
-git branch --set-upstream-to=origin/<branch> <branch> is the branch name
 
 /adding to repostery/-updating - you create a branch with comment and the file added/updated/
 git push origin master
@@ -69,6 +75,21 @@ add the files to the map home/team-wordpress android/
 do a add .
 do a git commit -m 'the comments'
 do a git push origin <branch> ,,, <branch> is the branch that you want to update 
+
+
+/* HOW TO SET UP THE .netrc FILE FOR LINUX */
+/*This file will contain the server/username/password */
+
+1) Create a file (.netrc) in your Home directory
+2) Add following to the file;
+   machine <hostname1>   replacing <hostname> with the server's hostname
+   login <login1>        replacing <login1> with your idd
+   password <password1>  replacing <password1> with your password
+   machine <hostname2>   You can add additional users
+   login <login2>
+   password <password2>
+3) Save the file and git will use it automaticlly    
+
 
 
 
